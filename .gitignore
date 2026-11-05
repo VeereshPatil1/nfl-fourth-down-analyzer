@@ -1,0 +1,5 @@
+# Virtual environment (each computer builds its own)
+.venv/
+
+# Python's auto-generated cache files
+__pycache__/
