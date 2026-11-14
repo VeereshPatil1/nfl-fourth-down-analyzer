@@ -12,3 +12,6 @@ print(pbp["down"].value_counts(dropna=False))
 fourth = pbp[pbp['down'] == 4.0] 
 print(len(fourth))
 print(fourth["play_type"].value_counts(dropna=False))
+print(fourth[['ydstogo', 'yardline_100', 'score_differential', 'game_seconds_remaining', 'play_type', 'fourth_down_converted']].head())
+went_for_it = fourth[fourth['play_type'].isin(['run', 'pass'])]
+print(went_for_it['fourth_down_converted'].mean())
